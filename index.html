@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000' width='18px' height='18px'%3E%3Cpath d='M7 10l5 5 5-5H7z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 8px top 50%;
+            background-size: 14px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #382d9d;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #382d9d;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="https://www.w3schools.com/action_page.php">
+        <div class="container">
+            <h2>Formulário</h2>
+            <form action="#" method="POST">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="curso">Curso:</label><br>
+                <select id="curso" name="curso" required>
+                    <option value="">Selecione o Curso</option>
+                    <option value="Engenharia da Computação">Engenharia da Computação</option>
+                    <option value="Analise e Desenvolvimento de Sistemas">Analise e Desenvolvimento de Sistemas</option>
+                    <option value="Contabilidade">Contabilidade</option>
+                    <option value="Automação Industrial">Automação Industrial</option>
+                </select><br><br>
+
+                <label for="universidade">Universidade:</label><br>
+                <select id="universidade" name="universidade" required>
+                    <option value="">Selecione a Universidade</option>
+                    <option value="Centro Universitario Facens">Centro Universitario Facens</option>
+                    <option value="Uniso">Uniso</option>
+                    <option value="Ufscar Sorocaba">Ufscar Sorocaba</option>
+                    <option value="Fatec Tatui">Fatec Tatui</option>
+                </select><br><br>
+
+                <label for="cidade">Cidade:</label><br>
+                <select id="cidade" name="cidade" required>
+                    <option value="">Selecione a Cidade</option>
+                    <option value="Sorocaba">Sorocaba</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Campinas">Campinas</option>
+                    <option value="Tatui">Tatui</option>
+                </select><br><br>
+
+                <label for="contato">Formas de Contato:</label><br>
+                <textarea id="contato" name="contato" rows="4" cols="50"></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </form>
+</body>
+
+</html>
